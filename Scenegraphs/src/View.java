@@ -86,6 +86,34 @@ public class View {
     projectionLocation = shaderLocations.getLocation("projection");
   }
 
+  public void turnCamera(Direction dir) {
+    switch (dir) {
+      case UP:
+        break;
+      case DOWN:
+        break;
+      case LEFT:
+        break;
+      case RIGHT:
+        break;
+    }
+  }
+
+  //set the camera at (0,0,50), looking at (0,0,0) with its 'up' direction as (0,1,0)
+
+  public void moveCamera(Direction dir) {
+    switch (dir) {
+      case FORWARD:
+        System.out.println("------got here------------");
+        modelView.push(new Matrix4f());
+        modelView.peek().lookAt(new Vector3f(0, 50, 100), new Vector3f(0, 50, 0), new Vector3f(0, 1, 0))
+                .mul(trackballTransform);
+        break;
+      case BACK:
+        break;
+    }
+  }
+
 
   public void draw(GLAutoDrawable gla) {
     GL3 gl = gla.getGL().getGL3();
@@ -100,11 +128,6 @@ public class View {
     while (!modelView.empty())
       modelView.pop();
 
-        /*
-         *In order to change the shape of this triangle, we can either move the vertex positions above, or "transform" them
-         * We use a modelview matrix to store the transformations to be applied to our triangle.
-         * Right now this matrix is identity, which means "no transformations"
-         */
     modelView.push(new Matrix4f());
     modelView.peek().lookAt(new Vector3f(0, 50, 80), new Vector3f(0, 50, 0), new Vector3f(0, 1, 0))
             .mul(trackballTransform);

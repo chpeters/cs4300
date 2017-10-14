@@ -110,6 +110,32 @@ public class JOGLFrame extends JFrame {
 
     @Override
     public void keyPressed(KeyEvent e) {
+      switch (e.getKeyCode()) {
+        case KeyEvent.VK_LEFT:
+          view.turnCamera(Direction.LEFT);
+          canvas.repaint();
+          break;
+        case KeyEvent.VK_RIGHT:
+          view.turnCamera(Direction.RIGHT);
+          canvas.repaint();
+          break;
+        case KeyEvent.VK_UP:
+          view.turnCamera(Direction.UP);
+          canvas.repaint();
+          break;
+        case KeyEvent.VK_DOWN:
+          view.turnCamera(Direction.DOWN);
+          canvas.repaint();
+          break;
+        case KeyEvent.VK_W:
+          view.moveCamera(Direction.FORWARD);
+          canvas.repaint();
+          break;
+        case KeyEvent.VK_S:
+          view.moveCamera(Direction.BACK);
+          canvas.repaint();
+          break;
+      }
     }
 
     @Override
