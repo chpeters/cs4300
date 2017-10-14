@@ -1,0 +1,22 @@
+<scene>
+    <instance name="box" path="models/box.obj" />
+
+    <group>
+        <transform name="front-room">
+            <set>
+                <translate>0 0 0</translate>
+            </set>
+            <group name="room" from="scenegraphmodels/room.xml">
+            </group>
+        </transform>
+
+        <transform name="middle-room">
+            <set>
+                <translate>0 0 -50</translate>
+            </set>
+            <group name="room" from="scenegraphmodels/room.xml">
+            </group>
+        </transform>
+
+    </group>
+</scene>

@@ -4,14 +4,14 @@
             <set>
                 <translate>-90 0 0</translate>
             </set>
-            <group name="Y" from="scenegraphs/humanoid.xml">
+            <group name="Y" from="scenegraphmodels/humanoid.xml">
             </group>
         </transform>
         <transform>
             <set>
                 <translate>40 0 0</translate>
             </set>
-            <group name="M" from="scenegraphs/humanoid.xml">
+            <group name="M" from="scenegraphmodels/humanoid.xml">
             </group>
         </transform>
     </group>

@@ -118,7 +118,7 @@ public class View {
     //return;
 
 
-    //gl.glPolygonMode(GL.GL_FRONT_AND_BACK,GL3.GL_LINE); //OUTLINES
+    gl.glPolygonMode(GL.GL_FRONT_AND_BACK,GL3.GL_LINE); //OUTLINES
 
     scenegraph.draw(modelView);
     /*

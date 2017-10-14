@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Scenegraphs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/Scenegraphs/DemoProgram.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/Scenegraphs/Codebase.zip!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/Scenegraphs/sgraph.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,74 @@
+<scene>
+    <instance name="box" path="models/box.obj" />
+
+    <group>
+
+        <transform name="right-wall">
+            <set>
+                <translate> 25 0 0 </translate>
+                <scale> 1 50 50 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="back-wall-with-door">
+            <set>
+                <translate>10 -15 -25</translate>
+            </set>
+            <group name="wall-with-door" from="scenegraphmodels/wall-with-door.xml">
+            </group>
+        </transform>
+
+        <transform name="front-wall-with-door">
+            <set>
+                <translate>10 -15 25</translate>
+            </set>
+            <group name="wall-with-door" from="scenegraphmodels/wall-with-door.xml">
+            </group>
+        </transform>
+
+        <transform name="left-wall-with-window">
+            <set>
+                <translate>-25 -15 -10</translate>
+                <rotate>90 0 1 0</rotate>
+            </set>
+            <group name="wall-with-door" from="scenegraphmodels/wall-with-window.xml">
+            </group>
+        </transform>
+
+        <transform name="floor-wall">
+            <set>
+                <translate> 0 -25 0 </translate>
+                <scale> 50 1 50 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="ceiling-wall">
+            <set>
+                <translate> 0 25 0 </translate>
+                <scale> 50 1 50 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+    </group>
+</scene>
