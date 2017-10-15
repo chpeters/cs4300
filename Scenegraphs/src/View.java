@@ -105,11 +105,12 @@ public class View {
     switch (dir) {
       case FORWARD:
         System.out.println("------got here------------");
-        modelView.push(new Matrix4f());
-        modelView.peek().lookAt(new Vector3f(0, 50, 100), new Vector3f(0, 50, 0), new Vector3f(0, 1, 0))
-                .mul(trackballTransform);
+        trackballTransform = new Matrix4f().lookAt(new Vector3f(0, 50, 25), new Vector3f(0, 50, 0), new Vector3f(0, 1, 0))
+              .mul(trackballTransform);
         break;
       case BACK:
+        trackballTransform = new Matrix4f().lookAt(new Vector3f(0, 50, 100), new Vector3f(0, 50, 0), new Vector3f(0, 1, 0))
+                .mul(trackballTransform);
         break;
     }
   }
@@ -132,10 +133,10 @@ public class View {
     modelView.peek().lookAt(new Vector3f(0, 50, 80), new Vector3f(0, 50, 0), new Vector3f(0, 1, 0))
             .mul(trackballTransform);
 
-
     /*
      *Supply the shader with all the matrices it expects.
     */
+
     FloatBuffer fb = Buffers.newDirectFloatBuffer(16);
     gl.glUniformMatrix4fv(projectionLocation, 1, false, projection.get(fb));
     //return;

@@ -18,5 +18,21 @@
             </group>
         </transform>
 
+        <transform name="table-scene">
+            <set>
+                <translate>0 -12 -50</translate>
+            </set>
+            <group name="table-scene" from="scenegraphmodels/table-scene.xml">
+            </group>
+        </transform>
+
+        <transform name="back-room">
+            <set>
+                <translate>0 0 -100</translate>
+            </set>
+            <group name="room" from="scenegraphmodels/room.xml">
+            </group>
+        </transform>
+
     </group>
 </scene>

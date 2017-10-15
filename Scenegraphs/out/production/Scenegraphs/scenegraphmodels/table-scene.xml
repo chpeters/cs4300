@@ -1,0 +1,92 @@
+<scene>
+    <instance name="box" path="models/box.obj" />
+    <instance name="cylinder" path="models/cylinder.obj" />
+    <instance name="cone" path="models/cone.obj" />
+    <instance name="sphere" path="models/sphere.obj" />
+    <instance name="trapSurface" path="models/trapSurface.obj" />
+
+    <group>
+
+        <transform name="table">
+            <set>
+                <translate>0 0 0</translate>
+            </set>
+            <group name="table" from="scenegraphmodels/table.xml">
+            </group>
+        </transform>
+
+
+        <transform name="trap">
+            <set>
+                <translate> 0 0 0 </translate>
+                <scale> 6 6 6 </scale>
+            </set>
+            <group>
+                <object instanceof="trapSurface">
+                    <material>
+                        <color> 0 1 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="cone">
+            <set>
+                <translate> 6 7 7.5 </translate>
+                <rotate>180 1 0 0</rotate>
+                <scale> 5 7.5 5 </scale>
+            </set>
+            <group>
+                <object instanceof="cone">
+                    <material>
+                        <color> .8 .4 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="sphere">
+            <set>
+                <translate> 6 8 7.5 </translate>
+                <scale> 4 4 4 </scale>
+            </set>
+            <group>
+                <object instanceof="sphere">
+                    <material>
+                        <color> 1 1 1 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="cylinder">
+            <set>
+                <translate> -8 1 7 </translate>
+                <scale> 3 6 3 </scale>
+            </set>
+            <group>
+                <object instanceof="cylinder">
+                    <material>
+                        <color> 0 0 1 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="cap">
+            <set>
+                <translate> -8 7 7 </translate>
+                <scale> 3 3 3 </scale>
+            </set>
+            <group>
+                <object instanceof="cone">
+                    <material>
+                        <color> 0 0 1 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+
+    </group>
+</scene>
