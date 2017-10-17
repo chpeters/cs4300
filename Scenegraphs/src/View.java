@@ -40,6 +40,10 @@ public class View {
   private int projectionLocation;
   private sgraph.IScenegraph<VertexAttrib> scenegraph;
 
+  private int x = 0;
+  private int y = 0;
+  private int z = 0;
+
 
   public View() {
     projection = new Matrix4f();
@@ -89,12 +93,16 @@ public class View {
   public void turnCamera(Direction dir) {
     switch (dir) {
       case UP:
+        y += 10;
         break;
       case DOWN:
+        y -= 10;
         break;
       case LEFT:
+        x -= 10;
         break;
       case RIGHT:
+        x += 10;
         break;
     }
   }
@@ -104,13 +112,10 @@ public class View {
   public void moveCamera(Direction dir) {
     switch (dir) {
       case FORWARD:
-        System.out.println("------got here------------");
-        trackballTransform = new Matrix4f().lookAt(new Vector3f(0, 50, 25), new Vector3f(0, 50, 0), new Vector3f(0, 1, 0))
-              .mul(trackballTransform);
+        z += 10;
         break;
       case BACK:
-        trackballTransform = new Matrix4f().lookAt(new Vector3f(0, 50, 100), new Vector3f(0, 50, 0), new Vector3f(0, 1, 0))
-                .mul(trackballTransform);
+        z -= 10;
         break;
     }
   }
@@ -130,7 +135,7 @@ public class View {
       modelView.pop();
 
     modelView.push(new Matrix4f());
-    modelView.peek().lookAt(new Vector3f(0, 50, 80), new Vector3f(0, 50, 0), new Vector3f(0, 1, 0))
+    modelView.peek().lookAt(new Vector3f(0, 50, 80 + z), new Vector3f(0 + x, 50 + y, 0), new Vector3f(0, 1, 0))
             .mul(trackballTransform);
 
     /*

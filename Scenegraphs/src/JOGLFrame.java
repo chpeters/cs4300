@@ -118,16 +118,16 @@ public class JOGLFrame extends JFrame {
           view.turnCamera(Direction.RIGHT);
           break;
         case KeyEvent.VK_UP:
-          view.turnCamera(Direction.UP);
-          break;
-        case KeyEvent.VK_DOWN:
-          view.turnCamera(Direction.DOWN);
-          break;
-        case KeyEvent.VK_W:
           view.moveCamera(Direction.FORWARD);
           break;
-        case KeyEvent.VK_S:
+        case KeyEvent.VK_DOWN:
           view.moveCamera(Direction.BACK);
+          break;
+        case KeyEvent.VK_W:
+          view.turnCamera(Direction.UP);
+          break;
+        case KeyEvent.VK_S:
+          view.turnCamera(Direction.DOWN);
           break;
       }
     }
