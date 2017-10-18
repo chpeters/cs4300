@@ -1,0 +1,19 @@
+1. What is a scene graph made of? What are its various parts and what is the function of each part?
+A scenegraph is a tree made of a root, nodes, a map of meshes, a map of textures, and a renderer. The root and the
+nodes form a tree structure used to organize pieces of the overall graphic. The nodes may have children and anything
+done to a parent propagates down through the tree. The polygon meshes, textures, and renderer are used to render
+the scene graph (i.e. the overall scene).
+
+2. How is the scene graph drawn, and how does it ensure the correct transformation gets applied to the correct part?
+The drawing of the scene graph is delegated to its renderer which begins drawing from a root and propagates through
+a tree, drawing each note with the appropriate mesh and texture, using the provided scene graph renderer. The
+model views are stored in a stack and passed through the tree to ensure that the transformations are applied through
+out the tree wherever appropriate.
+
+3. What is the use of the GL3ScenegraphRenderer class? If you wanted to create a textual rendering of the scene graph,
+how would you write such a renderer?
+The GL3ScenegraphRenderer class is a specific renderer implementation which is meant for the rendering of the scene
+graph. It implements the independent IScenegraphRenderer interface and contains the specific code meant to render the
+scene graph. In order to create a textual rendering of the scene graph, one would need to create a new renderer which
+implements the IScenegraphRenderer and have methods which specifically output a textual representation of the nodes
+of the scenegraph tree, starting from the root and propagating all the way through the leaves of the tree.
