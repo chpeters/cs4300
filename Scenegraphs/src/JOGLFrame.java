@@ -30,6 +30,7 @@ public class JOGLFrame extends JFrame {
   private View view;
   private MyTextRenderer textRenderer;
   private GLCanvas canvas;
+  private InputStream current;
 
   public JOGLFrame(String title) {
     //routine JFrame setting stuff
@@ -61,9 +62,13 @@ public class JOGLFrame extends JFrame {
         try {
           view.init(glAutoDrawable);
           textRenderer = new MyTextRenderer(glAutoDrawable);
-          InputStream in = getClass().getClassLoader()
-                  .getResourceAsStream
-                          ("scenegraphmodels/floorplan.xml");
+          InputStream in;
+          if (current == null) {
+            in = getClass().getClassLoader()
+                    .getResourceAsStream("scenegraphmodels/floorplan.xml");
+          } else {
+            in = current;
+          }
           view.initScenegraph(glAutoDrawable, in);
 
           glAutoDrawable.getGL().setSwapInterval(0);
@@ -128,6 +133,14 @@ public class JOGLFrame extends JFrame {
           break;
         case KeyEvent.VK_S:
           view.turnCamera(Direction.DOWN);
+          break;
+        case KeyEvent.VK_R:
+          current = getClass().getClassLoader()
+                  .getResourceAsStream("scenegraphmodels/floorplan.xml");
+          break;
+        case KeyEvent.VK_Y:
+          current = getClass().getClassLoader()
+                  .getResourceAsStream("scenegraphmodels/YMCA.xml");
           break;
       }
     }
