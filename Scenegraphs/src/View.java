@@ -43,6 +43,8 @@ public class View {
   private int x = 0;
   private int y = 0;
   private int z = 0;
+  private boolean updateScene = false;
+  private InputStream current = null;
 
 
   public View() {
@@ -120,6 +122,11 @@ public class View {
     }
   }
 
+  public void switchScene(InputStream resourceAsStream) {
+    current = resourceAsStream;
+    updateScene = true;
+  }
+
 
   public void draw(GLAutoDrawable gla) {
     GL3 gl = gla.getGL().getGL3();
@@ -148,6 +155,15 @@ public class View {
 
 
     gl.glPolygonMode(GL.GL_FRONT_AND_BACK,GL3.GL_LINE); //OUTLINES
+
+    if(updateScene){
+      updateScene = false;
+      try {
+        initScenegraph(gla, current);
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+    }
 
     scenegraph.draw(modelView);
     /*
@@ -200,6 +216,5 @@ public class View {
     GL3 gl = gla.getGL().getGL3();
 
   }
-
 
 }

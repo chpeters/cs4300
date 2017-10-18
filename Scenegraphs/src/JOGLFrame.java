@@ -135,12 +135,12 @@ public class JOGLFrame extends JFrame {
           view.turnCamera(Direction.DOWN);
           break;
         case KeyEvent.VK_R:
-          current = getClass().getClassLoader()
-                  .getResourceAsStream("scenegraphmodels/floorplan.xml");
+          view.switchScene(getClass().getClassLoader()
+                  .getResourceAsStream("scenegraphmodels/floorplan.xml"));
           break;
         case KeyEvent.VK_Y:
-          current = getClass().getClassLoader()
-                  .getResourceAsStream("scenegraphmodels/YMCA.xml");
+          view.switchScene(getClass().getClassLoader()
+                  .getResourceAsStream("scenegraphmodels/YMCA.xml"));
           break;
       }
     }
