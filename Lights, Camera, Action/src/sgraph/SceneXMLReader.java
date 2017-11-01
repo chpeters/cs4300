@@ -44,11 +44,13 @@ public class SceneXMLReader {
     parser.parse(in, handler);
 
     scenegraph = handler.getScenegraph();
+    System.out.println("Gets to end of parsing ----------------");
     return scenegraph;
   }
 }
 
 class MyHandler<K extends IVertexData> extends DefaultHandler {
+  private boolean isLight = false;
   private util.VertexProducer<? extends IVertexData> vProducer;
   private IScenegraph<K> scenegraph;
   private INode node;
@@ -112,6 +114,7 @@ class MyHandler<K extends IVertexData> extends DefaultHandler {
                     .getClassLoader().getResourceAsStream
                             (fromfile), (VertexProducer<K>) vProducer);
           } catch (Exception e) {
+            System.out.println("errors here ------");
             throw new SAXException(e.getMessage());
           }
           node = new sgraph.GroupNode(scenegraph, name);
@@ -200,6 +203,7 @@ class MyHandler<K extends IVertexData> extends DefaultHandler {
       }
       break;
       case "light":
+        isLight = true;
         light = new Light();
         break;
     }
@@ -248,17 +252,49 @@ class MyHandler<K extends IVertexData> extends DefaultHandler {
         material.setSpecular(material.getAmbient());
         material.setShininess(1.0f);
         break;
+      case "light":
+        stackNodes.peek().addLight(light);
+        light = new util.Light();
+        isLight = false;
+        break;
       case "ambient":
         sc = new Scanner(data);
-        material.setAmbient(sc.nextFloat(), sc.nextFloat(), sc.nextFloat());
+        if(!isLight) {
+          material.setAmbient(sc.nextFloat(), sc.nextFloat(), sc.nextFloat());
+        }
+        else{
+          light.setAmbient(sc.nextFloat(), sc.nextFloat(), sc.nextFloat());
+        }
         break;
       case "diffuse":
         sc = new Scanner(data);
-        material.setDiffuse(sc.nextFloat(), sc.nextFloat(), sc.nextFloat());
+        if(!isLight) {
+          material.setDiffuse(sc.nextFloat(), sc.nextFloat(), sc.nextFloat());
+        }
+        else{
+          light.setDiffuse(sc.nextFloat(), sc.nextFloat(), sc.nextFloat());
+        }
         break;
       case "specular":
         sc = new Scanner(data);
-        material.setSpecular(sc.nextFloat(), sc.nextFloat(), sc.nextFloat());
+        if(!isLight) {
+          material.setSpecular(sc.nextFloat(), sc.nextFloat(), sc.nextFloat());
+        }
+        else{
+          light.setSpecular(sc.nextFloat(), sc.nextFloat(), sc.nextFloat());
+        }
+        break;
+      case "position":
+        sc = new Scanner(data);
+        light.setPosition(sc.nextFloat(), sc.nextFloat(), sc.nextFloat());
+        break;
+      case "spotangle":
+        sc = new Scanner(data);
+        light.setSpotAngle(sc.nextFloat());
+        break;
+      case "spotdirection":
+        sc = new Scanner(data);
+        light.setSpotDirection(sc.nextFloat(), sc.nextFloat(), sc.nextFloat());
         break;
       case "emissive":
         sc = new Scanner(data);

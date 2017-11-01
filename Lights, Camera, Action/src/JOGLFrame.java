@@ -65,7 +65,7 @@ public class JOGLFrame extends JFrame {
           InputStream in;
           if (current == null) {
             in = getClass().getClassLoader()
-                    .getResourceAsStream("scenegraphmodels/helicopter.xml");
+                    .getResourceAsStream("scenegraphmodels/humanoid-lights.xml");
           } else {
             in = current;
           }

@@ -3,6 +3,7 @@ package sgraph;
 import com.jogamp.opengl.GL3;
 import org.joml.Matrix4f;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
@@ -82,10 +83,15 @@ public class LeafNode extends AbstractNode
     @Override
     public void draw(IScenegraphRenderer context,Stack<Matrix4f> modelView) throws IllegalArgumentException
     {
+        System.out.println("GOT TO LEAFNODE DRAW ---------------");
         if (objInstanceName.length()>0)
         {
-            context.drawMesh(objInstanceName,material,textureName,modelView.peek());
+            context.drawMesh(objInstanceName,material,this.getLights(),textureName,modelView.peek());
         }
+    }
+
+    public List<util.Light> getLights() {
+        return this.lights;
     }
 
 

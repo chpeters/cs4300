@@ -99,15 +99,11 @@ public class Scenegraph<VertexType extends IVertexData> implements IScenegraph<V
         }
     }
 
-
     @Override
     public void addPolygonMesh(String name, util.PolygonMesh<VertexType> mesh)
     {
         meshes.put(name,mesh);
     }
-
-
-
 
     @Override
     public void animate(float time) {
@@ -122,7 +118,6 @@ public class Scenegraph<VertexType extends IVertexData> implements IScenegraph<V
     public void addNode(String name, INode node) {
         nodes.put(name,node);
     }
-
 
     @Override
     public INode getRoot() {

@@ -132,4 +132,7 @@ public class GroupNode extends AbstractNode
     {
         return children;
     }
+    public List<util.Light> getLights() {
+        return this.lights;
+    }
 }
