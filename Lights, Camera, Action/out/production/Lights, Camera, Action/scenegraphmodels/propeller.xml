@@ -1,0 +1,48 @@
+<scene>
+    <instance name="box" path="models/box" />
+    <instance name="cylinder" path="models/cylinder" />
+
+    <group>
+        <transform name="stem">
+            <set>
+                <scale> 8 25 8 </scale>
+            </set>
+            <group>
+                <object instanceof="cylinder">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="first-propeller">
+            <set>
+                <translate> 0 25 0 </translate>
+                <scale> 125 2 15 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="second-propeller">
+            <set>
+                <rotate>90 0 1 0</rotate>
+                <translate> 0 25 0 </translate>
+                <scale> 125 2 15 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+    </group>
+</scene>

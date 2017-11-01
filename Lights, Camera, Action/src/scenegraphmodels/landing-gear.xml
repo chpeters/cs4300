@@ -1,0 +1,90 @@
+<scene>
+    <instance name="box" path="models/box" />
+    <instance name="cylinder" path="models/cylinder" />
+
+    <group>
+        <transform name="leg-1">
+            <set>
+                <translate> 40 0 20 </translate>
+                <scale> 4 20 4 </scale>
+            </set>
+            <group>
+                <object instanceof="cylinder">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="leg-2">
+            <set>
+                <translate> -40 0 20 </translate>
+                <scale> 4 20 4 </scale>
+            </set>
+            <group>
+                <object instanceof="cylinder">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="leg-3">
+            <set>
+                <translate> 40 0 -20 </translate>
+                <scale> 4 20 4 </scale>
+            </set>
+            <group>
+                <object instanceof="cylinder">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="leg-3">
+            <set>
+                <translate> -40 0 -20 </translate>
+                <scale> 4 20 4 </scale>
+            </set>
+            <group>
+                <object instanceof="cylinder">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="landing-beam-1">
+            <set>
+                <translate> -10 0 20 </translate>
+                <scale> 125 2 10 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="landing-beam-21">
+            <set>
+                <translate> -10 0 -20 </translate>
+                <scale> 125 2 10 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+    </group>
+</scene>

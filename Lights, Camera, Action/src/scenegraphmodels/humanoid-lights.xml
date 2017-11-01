@@ -444,6 +444,15 @@
 											<specular>0.8 0.8 0</specular>
 											<shininess>20</shininess>
 										</material>
+										<light>
+											<ambient>0.8 0.8 0.8</ambient>
+											<diffuse>0.8 0.8 0.8</diffuse>
+											<specular>0.8 0.8 0.8</specular>
+											<position>100 100 100 </position>
+											<direction>0 1 0 </direction>
+											<spotangle>90</spotangle>
+											<spotdirection>1 0 0 </spotdirection>
+										</light>
 									</object>
 								</transform>			
 							</group>
