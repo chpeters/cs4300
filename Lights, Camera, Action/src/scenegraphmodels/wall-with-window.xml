@@ -1,0 +1,61 @@
+<scene>
+    <instance name="box" path="models/box.obj" />
+    <group>
+        <transform name="top">
+            <set>
+                <translate> -10 30 0 </translate>
+                <scale> 50 20 1 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="bottom">
+            <set>
+                <translate> -10 0 0 </translate>
+                <scale> 50 20 1 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="left">
+            <set>
+                <translate> -25 15 0 </translate>
+                <scale> 20 10 1 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+
+        <transform name="right">
+            <set>
+                <translate> 5 15 0 </translate>
+                <scale> 20 10 1 </scale>
+            </set>
+            <group>
+                <object instanceof="box">
+                    <material>
+                        <color> 1 0 0 </color>
+                    </material>
+                </object>
+            </group>
+        </transform>
+    </group>
+
+</scene>
