@@ -1,33 +1,34 @@
 <scene>
     <instance name="box" path="models/box" />
     <instance name="cylinder" path="models/cylinder" />
-
-    <group>
-        <transform name="body">
-            <set>
-                <scale> 100 50 50 </scale>
-            </set>
-            <group>
-                <object instanceof="box">
-                    <material>
-                        <color> 1 0 0 </color>
-                    </material>
-                </object>
-            </group>
-        </transform>
-        <transform>
-            <set>
-                <translate>0 25 0</translate>
-            </set>
-            <group name="propeller" from="scenegraphmodels/propeller.xml">
-            </group>
-        </transform>
-        <transform>
-            <set>
-                <translate>0 -45 0</translate>
-            </set>
-            <group name="propeller" from="scenegraphmodels/landing-gear.xml">
-            </group>
-        </transform>
-    </group>
+    <transform name="helicopter">
+        <group>
+            <transform name="body">
+                <set>
+                    <scale> 100 50 50 </scale>
+                </set>
+                <group>
+                    <object instanceof="box">
+                        <material>
+                            <color> 1 0 0 </color>
+                        </material>
+                    </object>
+                </group>
+            </transform>
+            <transform name="propeller">
+                <set>
+                    <translate>0 25 0</translate>
+                </set>
+                <group name="propeller-obj" from="scenegraphmodels/propeller.xml">
+                </group>
+            </transform>
+            <transform>
+                <set>
+                    <translate>0 -45 0</translate>
+                </set>
+                <group name="landing-gear" from="scenegraphmodels/landing-gear.xml">
+                </group>
+            </transform>
+        </group>
+    </transform>
 </scene>

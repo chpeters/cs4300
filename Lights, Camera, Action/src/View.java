@@ -33,6 +33,7 @@ public class View {
   private Matrix4f projection, trackballTransform;
   private float trackballRadius;
   private Vector2f mousePos;
+  private int i = 0;
 
 
   private util.ShaderProgram program;
@@ -165,6 +166,8 @@ public class View {
       }
     }
 
+    i++;
+    scenegraph.animate(i);
     scenegraph.draw(modelView);
     /*
      *OpenGL batch-processes all its OpenGL commands.
