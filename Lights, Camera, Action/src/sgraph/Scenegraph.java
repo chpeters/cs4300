@@ -107,11 +107,15 @@ public class Scenegraph<VertexType extends IVertexData> implements IScenegraph<V
 
     @Override
     public void animate(float time) {
-        INode propeller = nodes.get("propeller");
-        propeller.setAnimationTransform(new Matrix4f().rotate(time, 0, 1, 0));
-        INode helicopter = nodes.get("helicopter");
-        helicopter.setAnimationTransform(new Matrix4f().translate(new Vector3f(
-                0, (float)(50*Math.sin(0.01*time)),0)));
+//        INode propeller = nodes.get("propeller");
+//        if (propeller != null) {
+//            propeller.setAnimationTransform(new Matrix4f().rotate(time, 0, 1, 0));
+//        }
+//        INode helicopter = nodes.get("helicopter");
+//        if (helicopter != null) {
+//            helicopter.setAnimationTransform(new Matrix4f().translate(new Vector3f(
+//                    0, (float)(50*Math.sin(0.01*time)),0)));
+//        }
     }
 
     @Override

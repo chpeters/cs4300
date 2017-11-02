@@ -90,9 +90,5 @@ public class LeafNode extends AbstractNode
         }
     }
 
-    public List<util.Light> getLights() {
-        return this.lights;
-    }
-
 
 }

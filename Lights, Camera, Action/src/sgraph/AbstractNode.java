@@ -151,4 +151,8 @@ public abstract class AbstractNode implements INode
         this.lights.add(l);
     }
 
+    public List<util.Light> getLights() {
+        return this.lights;
+    }
+
 }

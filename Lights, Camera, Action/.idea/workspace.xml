@@ -18,25 +18,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="humanoid-lights.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scenegraphmodels/humanoid-lights.xml">
+      <file leaf-file-name="Scenegraph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sgraph/Scenegraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            <state relative-caret-position="237">
+              <caret line="108" column="23" lean-forward="false" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="23" />
+              <folding>
+                <element signature="e#3348#3349#0" expanded="true" />
+                <element signature="e#3384#3385#0" expanded="true" />
+                <marker date="1509581899446" expanded="true" signature="2853:3277" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IScenegraph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sgraph/IScenegraph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="22" column="84" lean-forward="false" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scenegraph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sgraph/Scenegraph.java">
+      <file leaf-file-name="INode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sgraph/INode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="253">
+              <caret line="88" column="9" lean-forward="false" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3231#3232#0" expanded="true" />
-                <element signature="e#3267#3268#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,18 +57,18 @@
       <file leaf-file-name="JOGLFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JOGLFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
+            <state relative-caret-position="285">
               <caret line="67" column="74" lean-forward="false" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GL3ScenegraphRenderer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GL3ScenegraphRenderer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sgraph/GL3ScenegraphRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="167" column="89" lean-forward="false" selection-start-line="167" selection-start-column="89" selection-end-line="167" selection-end-column="89" />
+            <state relative-caret-position="2304">
+              <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,41 +77,18 @@
       <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="86" column="75" lean-forward="false" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="75" />
+            <state relative-caret-position="-58">
+              <caret line="58" column="14" lean-forward="false" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SceneXMLReader.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SceneXMLReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sgraph/SceneXMLReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1117">
-              <caret line="112" column="18" lean-forward="false" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeafNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sgraph/LeafNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-              <folding>
-                <element signature="e#2446#2447#0" expanded="true" />
-                <element signature="e#2480#2481#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IScenegraphRenderer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sgraph/IScenegraphRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+            <state relative-caret-position="133">
+              <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -108,12 +97,9 @@
       <file leaf-file-name="GroupNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sgraph/GroupNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="130" column="34" lean-forward="false" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="34" />
-              <folding>
-                <element signature="e#3542#3543#0" expanded="true" />
-                <element signature="e#3576#3577#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,15 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>color</find>
-      <find>nodes</find>
-      <find>p</find>
-      <find>animate</find>
-      <find>draw</find>
-      <find>prop</find>
-      <find>shaders</find>
-      <find>defaul</find>
-      <find>vcolor</find>
       <find>mat</find>
       <find>stackNode</find>
       <find>position</find>
@@ -148,9 +125,19 @@
       <find>islight</find>
       <find>.equal</find>
       <find>drawmesh</find>
-      <find>lights</find>
-      <find>importScenegraph</find>
       <find>importScene</find>
+      <find>startElement</find>
+      <find>parsing</find>
+      <find>getScenegraph</find>
+      <find>SceneXMLReader</find>
+      <find>scenegra</find>
+      <find>lights</find>
+      <find>animate</find>
+      <find>importScenegraph</find>
+      <find>lightslocation</find>
+      <find>lightLocations</find>
+      <find>init</find>
+      <find>initShaderVariables</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -166,15 +153,15 @@
         <option value="$PROJECT_DIR$/src/scenegraphmodels/propeller.xml" />
         <option value="$PROJECT_DIR$/src/scenegraphmodels/landing-gear.xml" />
         <option value="$PROJECT_DIR$/src/scenegraphmodels/helicopter.xml" />
+        <option value="$PROJECT_DIR$/src/JOGLFrame.java" />
+        <option value="$PROJECT_DIR$/src/sgraph/IScenegraphRenderer.java" />
+        <option value="$PROJECT_DIR$/src/sgraph/SceneXMLReader.java" />
         <option value="$PROJECT_DIR$/src/sgraph/Scenegraph.java" />
         <option value="$PROJECT_DIR$/src/View.java" />
+        <option value="$PROJECT_DIR$/src/sgraph/LeafNode.java" />
         <option value="$PROJECT_DIR$/src/sgraph/AbstractNode.java" />
         <option value="$PROJECT_DIR$/src/sgraph/GroupNode.java" />
-        <option value="$PROJECT_DIR$/src/JOGLFrame.java" />
         <option value="$PROJECT_DIR$/src/sgraph/GL3ScenegraphRenderer.java" />
-        <option value="$PROJECT_DIR$/src/sgraph/IScenegraphRenderer.java" />
-        <option value="$PROJECT_DIR$/src/sgraph/LeafNode.java" />
-        <option value="$PROJECT_DIR$/src/sgraph/SceneXMLReader.java" />
       </list>
     </option>
   </component>
@@ -398,28 +385,27 @@
       <option name="presentableId" value="Default" />
       <updated>1509498262612</updated>
       <workItem from="1509498265353" duration="2221000" />
-      <workItem from="1509539766247" duration="15474000" />
+      <workItem from="1509539766247" duration="18189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17695000" />
+    <option name="totallyTimeSpent" value="20410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1839431" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60162604" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1839431" sideWeight="0.49166667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22459349" sideWeight="0.49166667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1904762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1904762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -433,6 +419,31 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.60162604" sideWeight="0.5083333" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.60162604" sideWeight="0.49166667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1904762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -466,9 +477,9 @@
         <state relative-caret-position="2277">
           <caret line="110" column="37" lean-forward="true" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3231#3232#0" expanded="true" />
-            <element signature="e#3267#3268#0" expanded="true" />
+            <element signature="e#3348#3349#0" expanded="true" />
+            <element signature="e#3384#3385#0" expanded="true" />
+            <marker date="1509581899446" expanded="true" signature="2853:3277" ph="..." />
           </folding>
         </state>
       </provider>
@@ -555,14 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sgraph/IScenegraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Fans/src/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3532">
@@ -627,65 +630,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sgraph/INode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-365">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sgraph/AbstractNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="150" column="27" lean-forward="true" selection-start-line="150" selection-start-column="27" selection-end-line="150" selection-end-column="27" />
-          <folding>
-            <element signature="e#4037#4038#0" expanded="true" />
-            <element signature="e#4071#4072#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scenegraphmodels/humanoid-lights.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sgraph/Scenegraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3231#3232#0" expanded="true" />
-            <element signature="e#3267#3268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="86" column="75" lean-forward="false" selection-start-line="86" selection-start-column="70" selection-end-line="86" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JOGLFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="67" column="74" lean-forward="false" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sgraph/GL3ScenegraphRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="167" column="89" lean-forward="false" selection-start-line="167" selection-start-column="89" selection-end-line="167" selection-end-column="89" />
           <folding />
         </state>
       </provider>
@@ -698,28 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sgraph/GroupNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="130" column="34" lean-forward="false" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="34" />
-          <folding>
-            <element signature="e#3542#3543#0" expanded="true" />
-            <element signature="e#3576#3577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sgraph/LeafNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding>
-            <element signature="e#2446#2447#0" expanded="true" />
-            <element signature="e#2480#2481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/org/xml/sax/SAXException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
@@ -728,10 +654,109 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/JOGLFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="67" column="74" lean-forward="false" selection-start-line="67" selection-start-column="74" selection-end-line="67" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/ShaderLocationsVault.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sgraph/INode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="88" column="9" lean-forward="false" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sgraph/Scenegraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="108" column="23" lean-forward="false" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="23" />
+          <folding>
+            <element signature="e#3348#3349#0" expanded="true" />
+            <element signature="e#3384#3385#0" expanded="true" />
+            <marker date="1509581899446" expanded="true" signature="2853:3277" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sgraph/IScenegraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="22" column="84" lean-forward="false" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="58" column="14" lean-forward="false" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sgraph/LeafNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="90" column="5" lean-forward="false" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sgraph/GroupNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sgraph/AbstractNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2650">
+          <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="e#4037#4038#0" expanded="true" />
+            <element signature="e#4071#4072#0" expanded="true" />
+            <element signature="e#4114#4115#0" expanded="true" />
+            <element signature="e#4148#4149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sgraph/SceneXMLReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1117">
-          <caret line="112" column="18" lean-forward="false" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="18" />
+        <state relative-caret-position="133">
+          <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sgraph/GL3ScenegraphRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2304">
+          <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding />
         </state>
       </provider>

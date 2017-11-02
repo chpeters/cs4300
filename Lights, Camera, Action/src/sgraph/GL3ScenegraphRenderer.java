@@ -27,11 +27,11 @@ public class GL3ScenegraphRenderer implements IScenegraphRenderer {
             ambient = diffuse = specular = position = -1;
         }
     }
-    private List<util.Light> lights;
+    private List<util.Light> lights = new ArrayList<>();
     private int modelviewLocation, projectionLocation, normalmatrixLocation, texturematrixLocation;
     private int materialAmbientLocation, materialDiffuseLocation, materialSpecularLocation, materialShininessLocation;
     private int textureLocation;
-    private List<LightLocation> lightLocations;
+    private List<LightLocation> lightLocations = new ArrayList<>();
     private int numLightsLocation;
 
 
@@ -182,6 +182,8 @@ public class GL3ScenegraphRenderer implements IScenegraphRenderer {
                 gl.glUniform4fv(lightLocations.get(i).position, 1, pos.get(fb4));
             }
 
+            lightLocations = new ArrayList<>();
+
             gl.glUniformMatrix4fv(projectionLocation, 1, false, new Matrix4f().identity().get(fb16));
 
             //all the light properties, except positions
@@ -208,6 +210,7 @@ public class GL3ScenegraphRenderer implements IScenegraphRenderer {
     }
 
     private void initShaderVariables() {
+        System.out.println("got here ----");
         //get input variables that need to be given to the shader program
         projectionLocation = shaderLocations.getLocation("projection");
         modelviewLocation = shaderLocations.getLocation("modelview");

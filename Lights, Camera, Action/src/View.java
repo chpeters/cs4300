@@ -63,18 +63,22 @@ public class View {
       scenegraph.dispose();
 
     program.enable(gl);
-
+    System.out.println("About to get scenegraph -------");
     scenegraph = sgraph.SceneXMLReader.importScenegraph(in, new VertexAttribProducer());
-
+    System.out.println("Got scenegraph -------");
     sgraph.IScenegraphRenderer renderer = new sgraph.GL3ScenegraphRenderer();
+    System.out.println("Got renderer -------");
     renderer.setContext(gla);
     Map<String, String> shaderVarsToVertexAttribs = new HashMap<String, String>();
     shaderVarsToVertexAttribs.put("vPosition", "position");
     shaderVarsToVertexAttribs.put("vNormal", "normal");
     shaderVarsToVertexAttribs.put("vTexCoord", "texcoord");
     renderer.initShaderProgram(program, shaderVarsToVertexAttribs);
+    System.out.println("scenegraph renderer start-------");
     scenegraph.setRenderer(renderer);
+    System.out.println("scenegraph renderer done-------");
     program.disable(gl);
+    System.out.println("end of init scenegraph -------");
   }
 
   public void init(GLAutoDrawable gla) throws Exception {
@@ -161,6 +165,7 @@ public class View {
       updateScene = false;
       try {
         initScenegraph(gla, current);
+
       } catch (Exception e) {
         e.printStackTrace();
       }
